@@ -1,0 +1,94 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: aqua;
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: 400px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.973);
+    padding: 4px;
+
+}
+
+nav {
+    position: absolute;
+
+    flex-direction: row;
+	border-radius: 0px;
+	background: rgb(38, 224, 13);
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+nav ul li {
+    display: inline;
+}
+
+nav ul li a{
+    background-color: transparent;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
+    color: black;
+    font-weight: bold;
+
+}
+
+.principal {
+    padding: 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 120%;
+    right: 0;
+}
+
+.negrito1 {
+    position: absolute;
+    top: 95%;
+    right: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.negrito {
+    font-weight: bold;
+    color: rgb(14, 12, 12);
+}
+
+
+.avatar {
+    position: absolute;
+    top: 16%;
+    right: 4%;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+}
+
+.avatar_imagem {
+    object-fit: fill; /* object-fit: cover serve para ajustar imagem num tamanho pequeno */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /*padding: 50px;*/
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}

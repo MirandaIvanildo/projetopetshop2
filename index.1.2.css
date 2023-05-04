@@ -1,0 +1,159 @@
+* {
+    
+    font-family: sans-serif;
+
+}
+
+ul li {
+    display: inline;
+    margin: 0 5px 0 5px;
+}
+ul li a:hover {
+    color: rgb(0, 255, 64);
+    font-weight: bold;
+} 
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: #f1f1f1;
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: 400px;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.973);
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.ivan_miranda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* justify-content: space-between  serve para deixar as imagens separadas na tela cheia*/
+    
+    
+}
+
+.ivan {
+    
+    
+	flex-direction: row;
+	border-radius: 0px;  /*border-radius: 24px; serve para deixar o elemento redondo ou canto redondo*/
+	/*position: fixed;*/
+	background: rgb(81, 81, 143);
+    color: rgba(255, 255, 255, 0.801);
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+nav ul li {
+    display: inline;
+    /*margin: 5px;*/
+    padding: 5px;
+
+}
+
+nav ul li a{
+    background: transparent;
+	margin: 0 5px 0 5px;
+    
+    
+
+}
+
+nav ul li a:hover {
+    color: #17dd49;
+	font-weight:bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.card {
+    height: 325px;
+    width: 225px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px 0 rgba(0 0 0 / 12%);
+    overflow: hidden;
+    margin: 12px 0 0;;  /* margin: 12px 0 0;;  serve para espaçamentos entre os elementos*/
+}
+
+.card:hover {
+    box-shadow: 0 0 1px 1px rgba(0 0 0 / 7%), 0 10px 15px 0 rgb(0 0 0 / 10%);
+}
+
+.card_imagem {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.801)
+}
+
+.card_info {
+    padding: 16px;
+}
+
+.card_info > span {
+    display: block;
+    margin-top: 2px;
+}
+
+.card_badge {
+    background-color: rgb(63, 63, 209);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    width: fit-content; /*fit-content serve para ajustar escrita com o fonte*/
+    padding: 2px 4px;
+    margin-bottom: 4px;
+}
+
+.card_precoanterior {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    text-decoration: line-through; /* line-throigh serve para cortar escrita no meio com uma linha*/
+
+}
+
+.card_precoatual {
+    font-size: 24px;
+    line-height: 24px;
+    color: rgb(0 0 0 / 80%);
+    
+}
+
+.card_disconto {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(0, 166, 80);
+}
+
+.card_parcelamento, .card_frete {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 166, 80);
+}
+
+.card_titulo {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(0, 0 0);
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
